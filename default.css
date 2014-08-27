@@ -1,0 +1,28 @@
+/* estilos por defecto del sitio uasal */
+.btn-gestion a {
+
+	display:block;
+	width:100%;
+	height:100%;
+	text-decoration: none;
+	color:white;
+	text-align: center;
+	font-size: 3em;
+	
+}
+
+.btn-gestion a:hover{
+	color:#084B8A;
+
+}
+
+#inscribir {
+	padding-top:4em;
+	padding-bottom: 4em;
+	padding-left: 1em;
+}
+
+html,body {
+	background-image: url(../img/fondo.png);
+	background-repeat: repeat;
+}
