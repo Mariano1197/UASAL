@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS `UASAL`.`CORRELATIVIDAD` (
+  `mat_id` INT NOT NULL,
+  `cor_idcorrelativacursar` INT NOT NULL,
+  `cor_idcorrelativafinal` INT NULL,
+  PRIMARY KEY (`mat_id`, `cor_idcorrelativacursar`),
+  CONSTRAINT `fk_CORRELATIVIDAD_CURSADO_MATERIA_X_CARRERA1`
+    FOREIGN KEY (`mat_id`)
+    REFERENCES `UASAL`.`MATERIA_X_CARRERA` (`mat_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+SHOW WARNINGS;
